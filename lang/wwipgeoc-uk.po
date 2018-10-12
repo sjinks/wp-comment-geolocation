@@ -1,0 +1,14 @@
+#: ../inc/Plugin.php:40
+msgid "IP Geolocation"
+msgstr "Геолокація"
+
+#: ../inc/Plugin.php:48
+msgid "N/A"
+msgstr "Невідомо"
+
+#: ../inc/Plugin.php:54
+#, php-format
+msgid ""
+"<strong style=\"vertical-align: middle;\">%1$s</strong> %2$s<br/>%3$s, %4$s"
+msgstr ""
+"<strong style=\"vertical-align: middle;\">%1$s</strong> %2$s<br/>%3$s, %4$s"
