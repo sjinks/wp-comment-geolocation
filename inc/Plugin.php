@@ -24,7 +24,7 @@ final class Plugin
 
 	public function init()
 	{
-		\load_plugin_textdomain('wwipgeoc', /** @scrutinizer ignore-type */ false, \plugin_basename(\dirname(\dirname(__FILE__))) . '/lang/');
+		\load_plugin_textdomain('wwipgeoc', /** @scrutinizer ignore-type */ false, \plugin_basename(\dirname(__DIR__)) . '/lang/');
 	}
 
 	public function admin_init()
