@@ -1,7 +1,7 @@
 <?php
 /*
  Plugin Name: WW Comment Geolocation
- Plugin URI: 
+ Plugin URI: https://github.com/sjinks/wp-comment-geolocation
  Description: Adds "IP Geolocation" column to "Manage Comments" screen
  Author: Volodymyr Kolesnykov
  Version: 1.0.0

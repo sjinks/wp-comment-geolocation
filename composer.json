@@ -1,15 +1,15 @@
 {
-	"name" : "wildwolf/wp-comment-geolocation",
-	"type" : "wordpress-plugin",
-	"description" : "WordPress plugin to add \"IP Geolocation\" column to \"Manage Comments\" screen",
-	"keywords" : ["wordpress", "plugin", "comments", "geolocation"],
-	"license" : "MIT",
-	"homepage" : "https://github.com/sjinks/wp-comment-geolocation",
-	"authors" : [
+	"name": "wildwolf/wp-comment-geolocation",
+	"type": "wordpress-plugin",
+	"description": "A WordPress plugin to add \"IP Geolocation\" column to \"Manage Comments\" screen",
+	"keywords": ["wordpress", "plugin", "comments", "geolocation"],
+	"license": "MIT",
+	"homepage": "https://github.com/sjinks/wp-comment-geolocation",
+	"authors": [
 		{
-			"name" : "Volodymyr Kolesnykov",
-			"email" : "volodymyr@wildwolf.name",
-			"role" : "Developer"
+			"name": "Volodymyr Kolesnykov",
+			"email": "volodymyr@wildwolf.name",
+			"role": "Developer"
 		}
 	],
 	"autoload": {
@@ -17,9 +17,9 @@
 			"WildWolf\\CommentGeolocation\\": "inc/"
 		}
 	},
-	"require" : {
-		"php" : ">=7.0.0",
-		"composer/installers" : "~1.0",
+	"require": {
+		"php": ">=7.0.0",
+		"composer/installers": "~1.0",
 		"ext-geoip": "*"
 	}
 }
