@@ -68,7 +68,7 @@ final class Plugin {
 				__( '<strong style="vertical-align: middle;">%1$s</strong> %2$s<br/>%3$s, %4$s', 'wwipgeoc' ),
 				esc_html( $ip ),
 				// phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
-				$code ? ( '<img src="https://www.countryflags.io/' . esc_url( strtolower( $code ) ) . '/flat/24.png" alt="" style="vertical-align: middle"/>' ) : '',
+				$code ? ( '<img src="https://www.countryflags.io/' . esc_attr( strtolower( $code ) ) . '/flat/24.png" alt="" style="vertical-align: middle"/>' ) : '',
 				esc_html( $country ),
 				esc_html( $city )
 			);
