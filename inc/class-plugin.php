@@ -63,12 +63,19 @@ final class Plugin {
 			/** @psalm-suppress MixedArrayAccess */
 			$city = (string) ( $record['city']['names']['en'] ?? $na );
 
+			if ( $code ) {
+				$code = esc_attr( strtolower( $code ) );
+				$flag = "<img src=\"https://flagcdn.com/24x18/{$code}.png\" srcset=\"https://flagcdn.com/48x36/{$code}.png 2x, https://flagcdn.com/72x54/{$code}.png 3x\" width=\"24\" height=\"18\"/>";
+			} else {
+				$flag = '';
+			}
+
 			printf(
 				// translators: %1$s - IP address, %2$s - country flag, %3$s - country name, %4$s - city name
-				__( '<strong style="vertical-align: middle;">%1$s</strong> %2$s<br/>%3$s, %4$s', 'wwipgeoc' ),
+				__( '<strong style="vertical-align: middle;">%1$s</strong> %2$s<br/>%3$s, %4$s', 'wwipgeoc' ), // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 				esc_html( $ip ),
 				// phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
-				$code ? ( '<img src="https://www.countryflags.io/' . esc_attr( strtolower( $code ) ) . '/flat/24.png" alt="" style="vertical-align: middle"/>' ) : '',
+				$flag,
 				esc_html( $country ),
 				esc_html( $city )
 			);
