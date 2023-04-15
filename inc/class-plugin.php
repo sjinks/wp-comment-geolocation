@@ -65,7 +65,7 @@ final class Plugin {
 
 			if ( $code ) {
 				$code = esc_attr( strtolower( $code ) );
-				$flag = "<img src=\"https://flagcdn.com/16x12/{$code}.png\" srcset=\"https://flagcdn.com/32x24/{$code}.png 2x, https://flagcdn.com/48x36/{$code}.png 3x\" width=\"24\" height=\"18\" style=\"vertical-align: middle\"/>";
+				$flag = "<img src=\"https://flagcdn.com/16x12/{$code}.png\" srcset=\"https://flagcdn.com/32x24/{$code}.png 2x, https://flagcdn.com/48x36/{$code}.png 3x\" width=\"16\" height=\"12\" style=\"vertical-align: middle\"/>";
 			} else {
 				$flag = '';
 			}
