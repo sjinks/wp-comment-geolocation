@@ -1,12 +1,12 @@
-#: ../inc/Plugin.php:40
+#: ../inc/class-plugin.php:41
 msgid "IP Geolocation"
-msgstr "Геолокация"
+msgstr ""
 
-#: ../inc/Plugin.php:48
+#: ../inc/class-plugin.php:55
 msgid "N/A"
-msgstr "Неизвестно"
+msgstr "Н/Д"
 
-#: ../inc/Plugin.php:54
+#: ../inc/class-plugin.php:68
 #, php-format
 msgid ""
 "<strong style=\"vertical-align: middle;\">%1$s</strong> %2$s<br/>%3$s, %4$s"
